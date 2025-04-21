@@ -1,7 +1,7 @@
 name: chekout repo
 on: push
-jobs:
-    first_job:
+jobs: 
+    first_job: 
         runs-on: ubuntu-latest
         steps:
           - name: Checkout
@@ -11,6 +11,7 @@ jobs:
             uses: actions/checkout@v4
 
           - name: List files 
-            run: ls -la 
+            run: ls -la
+
 
 
