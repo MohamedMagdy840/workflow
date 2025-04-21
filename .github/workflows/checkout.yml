@@ -1,0 +1,16 @@
+name: chekout repo
+on: push
+jobs: 
+    first_job: 
+        runs-on: ubuntu_latest
+        steps:
+          - name: Checkout
+            run: echo "Checkout my repo"
+
+          - name: get repos
+            uses: actions/checkout@v4
+
+          - name: List files 
+            run: ls -la
+
+
