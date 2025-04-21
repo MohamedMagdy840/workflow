@@ -11,7 +11,7 @@ jobs:
           run: sudo apt-get install cowsay -y
 
         - name: execute command 
-          run: echo "i am  a dragon" >> dragon.txt
+          run: cowsay -f dragon "i am  a dragon" >> dragon.txt
 
         - name: upload files 
           uses: actions/upload-artifact@v4
@@ -28,7 +28,6 @@ jobs:
           uses: actions/download-artifact@v4
           with:
             name: dragon
-            path: dragon.txt
 
         - name: List files 
           run:  ls -la
@@ -46,7 +45,6 @@ jobs:
            uses: actions/download-artifact@v4
            with:
             name: dragon
-            path: dragon.txt
 
          - name: deploy job
            run: |
