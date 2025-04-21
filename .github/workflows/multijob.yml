@@ -29,7 +29,10 @@ jobs:
           with:
             name: dragon
             path: dragon.txt
-  
+
+        - name: List files 
+          run:  ls -la
+
         - name: grep file
           run: grep -i "dragon" dragon.txt
 
