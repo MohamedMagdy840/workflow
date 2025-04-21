@@ -12,8 +12,9 @@ jobs:
 
           - name: List files 
             run: |
-             cat README.md
              ls -la
+             cat README.md
+
 
 
 
