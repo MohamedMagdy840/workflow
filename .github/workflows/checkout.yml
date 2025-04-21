@@ -1,8 +1,8 @@
 name: chekout repo
 on: push
-jobs: 
-    first_job: 
-        runs-on: ubuntu_latest
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
         steps:
           - name: Checkout
             run: echo "Checkout my repo"
